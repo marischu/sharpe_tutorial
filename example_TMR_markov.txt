@@ -1,0 +1,18 @@
+echo Example - TMR
+markov tmr
+3 2 3*lambda
+2 F 2*lambda
+end
+3 1
+2 0
+F 0
+end
+bind lambda 1
+
+cdf(tmr,3)
+cdf(tmr,2)
+cdf(tmr,F)
+
+echo MTTF is mean time to reach absorbing state!
+expr mean(tmr,F)
+end

@@ -1,0 +1,26 @@
+markov Doub_TMR
+6 5 6*lambda
+5 F 5*lambda
+reward
+6 2
+5 2
+F 0
+end
+
+6 1
+5 0
+F 0
+end
+
+bind
+lambda 1
+end
+
+cdf(Doub_TMR,6)
+cdf(Doub_TMR,5)
+cdf(Doub_TMR,F)
+expr exrt(2;Doub_TMR)
+expr cexrt(10;Doub_TMR)
+expr cexrt(100;Doub_TMR)
+expr cexrt(1000;Doub_TMR)
+end

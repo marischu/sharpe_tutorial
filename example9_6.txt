@@ -1,0 +1,30 @@
+echo Reliability Block Diagram Ex. 2
+block example9_6
+comp 1 exp(lambda)
+comp 2 exp(lambda)
+comp 3 exp(lambda)
+comp 4 exp(lambda)
+comp 5 exp(lambda)
+comp 6 exp(lambda)
+comp 7 exp(lambda)
+comp 8 exp(lambda)
+comp 9 exp(lambda)
+comp 10 exp(lambda)
+comp 11 exp(lambda)
+
+
+
+
+
+
+end
+
+bind lambda 1
+
+cdf(example9_6)
+
+expr mean(example9_6)
+
+eval(example9_6) 0 2 .1
+
+end

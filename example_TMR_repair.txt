@@ -1,0 +1,19 @@
+markov tmr2
+3 2 3*lambda
+2 3 mu
+2 F 2*lambda
+end
+3 1
+2 0
+F 0
+end
+
+bind lambda 1
+bind mu 1
+
+cdf(tmr2,3)
+cdf(tmr2,2)
+cdf(tmr2,F)
+
+expr mean(tmr2,F)
+end

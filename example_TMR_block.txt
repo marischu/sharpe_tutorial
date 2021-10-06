@@ -1,0 +1,12 @@
+echo Example - TMR 
+block tmr
+comp A exp(lambda)
+kofn sys 2,3,A
+end
+
+bind lambda 1
+cdf(tmr)
+expr mean(tmr)
+expr tvalue(1;tmr)
+eval (tmr) 0 10 .5
+end

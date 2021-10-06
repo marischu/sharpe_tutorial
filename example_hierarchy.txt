@@ -1,0 +1,17 @@
+echo Example - Hierarchy
+block tmr
+comp A exp(lambda)
+kofn sys 2, 3, A
+end
+relgraph rg
+a b exp(lambda)
+a c exp(lambda)
+c b exp(lambda)
+b e exp(lambda)
+c e exp(lambda)
+e f cdf(tmr)
+end
+bind lambda 1
+cdf(rg)
+eval(rg) 0 1 .1
+end

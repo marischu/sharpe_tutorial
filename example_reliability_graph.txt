@@ -1,0 +1,11 @@
+relgraph rg
+a b exp(lambda)
+a c exp(lambda)
+c b exp(lambda)
+b e exp(lambda)
+c e exp(lambda)
+e f exp(lambda)
+end
+bind lambda 1
+cdf(rg)
+end
